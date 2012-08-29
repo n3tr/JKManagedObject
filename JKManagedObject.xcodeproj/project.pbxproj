@@ -15,6 +15,9 @@
 		6A67384A15EDE3D500C07AF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A67384915EDE3D500C07AF3 /* main.m */; };
 		6A67384E15EDE3D500C07AF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A67384D15EDE3D500C07AF3 /* AppDelegate.m */; };
 		6A67385115EDE3D500C07AF3 /* JKManagedObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A67384F15EDE3D500C07AF3 /* JKManagedObject.xcdatamodeld */; };
+		6A67385F15EDE40100C07AF3 /* JKManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A67385E15EDE40100C07AF3 /* JKManagedObject.m */; };
+		6A67386215EDE5DC00C07AF3 /* JKMOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A67386115EDE5DC00C07AF3 /* JKMOC.m */; };
+		6A67386515EDEA6800C07AF3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A67386415EDEA6800C07AF3 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,12 @@
 		6A67384C15EDE3D500C07AF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A67384D15EDE3D500C07AF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6A67385015EDE3D500C07AF3 /* JKManagedObject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JKManagedObject.xcdatamodel; sourceTree = "<group>"; };
+		6A67385D15EDE40100C07AF3 /* JKManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKManagedObject.h; path = Classes/JKManagedObject.h; sourceTree = "<group>"; };
+		6A67385E15EDE40100C07AF3 /* JKManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKManagedObject.m; path = Classes/JKManagedObject.m; sourceTree = "<group>"; };
+		6A67386015EDE5DC00C07AF3 /* JKMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKMOC.h; path = Classes/JKMOC.h; sourceTree = "<group>"; };
+		6A67386115EDE5DC00C07AF3 /* JKMOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKMOC.m; path = Classes/JKMOC.m; sourceTree = "<group>"; };
+		6A67386315EDEA6800C07AF3 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Model/User.h; sourceTree = SOURCE_ROOT; };
+		6A67386415EDEA6800C07AF3 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Model/User.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +59,7 @@
 		6A67382C15EDE3D500C07AF3 = {
 			isa = PBXGroup;
 			children = (
+				6A67385B15EDE3E100C07AF3 /* Classes */,
 				6A67384315EDE3D500C07AF3 /* JKManagedObject */,
 				6A67383A15EDE3D500C07AF3 /* Frameworks */,
 				6A67383815EDE3D500C07AF3 /* Products */,
@@ -81,6 +91,8 @@
 				6A67384C15EDE3D500C07AF3 /* AppDelegate.h */,
 				6A67384D15EDE3D500C07AF3 /* AppDelegate.m */,
 				6A67384F15EDE3D500C07AF3 /* JKManagedObject.xcdatamodeld */,
+				6A67386315EDEA6800C07AF3 /* User.h */,
+				6A67386415EDEA6800C07AF3 /* User.m */,
 				6A67384415EDE3D500C07AF3 /* Supporting Files */,
 			);
 			path = JKManagedObject;
@@ -95,6 +107,25 @@
 				6A67384B15EDE3D500C07AF3 /* JKManagedObject-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A67385B15EDE3E100C07AF3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6A9575B015EE1BA500966A1A /* JKManagedObjectClass */,
+				6A67386015EDE5DC00C07AF3 /* JKMOC.h */,
+				6A67386115EDE5DC00C07AF3 /* JKMOC.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		6A9575B015EE1BA500966A1A /* JKManagedObjectClass */ = {
+			isa = PBXGroup;
+			children = (
+				6A67385D15EDE40100C07AF3 /* JKManagedObject.h */,
+				6A67385E15EDE40100C07AF3 /* JKManagedObject.m */,
+			);
+			name = JKManagedObjectClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +193,9 @@
 				6A67384A15EDE3D500C07AF3 /* main.m in Sources */,
 				6A67384E15EDE3D500C07AF3 /* AppDelegate.m in Sources */,
 				6A67385115EDE3D500C07AF3 /* JKManagedObject.xcdatamodeld in Sources */,
+				6A67385F15EDE40100C07AF3 /* JKManagedObject.m in Sources */,
+				6A67386215EDE5DC00C07AF3 /* JKMOC.m in Sources */,
+				6A67386515EDEA6800C07AF3 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +303,7 @@
 				6A67385615EDE3D500C07AF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
